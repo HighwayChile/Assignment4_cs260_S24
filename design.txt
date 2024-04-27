@@ -3,6 +3,22 @@ it to a given position in the list (stack).
 
 Will create a class called Stack, like in the class examples.
 
+I am imagining a design where the stack is checked 
+for empty, then if the list is >=1, 
+the user may remove an item. Removing is done by taking the 
+pointer of the former node and pointing it to the latter node.
+
+
+the user may insert an item at any time, but if the  
+stack_size is >=1, the user needs to choose a value 
+as well as a position. This function is kind of the 
+"opposite" of the remove function. The user chooses 
+a position, and the node before the chosen position will 
+have its pointer directed to the new_node, and the new_node 
+will point to the node that was formerly in the chosen postion.
+
+Get function should read the value at the address of the node 
+which is x many steps from 0 (indeces)
 
 
 
@@ -26,29 +42,76 @@ class Stack {
     // end copy/pasta
 };
 
-
+// instantiate a pointer
 Stack::Stack() {
    stack_size = 0; //list size begins at zero
 
    user_choice = nullptr; 
-   // I am imagining a design where the stack is checked 
-   // for empty, then if the list is >=1, 
-   // the user may remove an item.  
-   // the user may insert an item at any time, but if the  
-   // stack_size is >=1, the user needs to choose a value 
-   // and a position 
-   // 
 }
 
-void insert() {
-
+void Stack::insert() {
+    // This code needs to check if the list is empty, then
+    // if not empty, ask user for position
+    if(stack_size >=1 && user_choice != nullptr) {
+        // show size of list, possibly show values in list
+        cout << user_choice.value << endl;
+        // ask for position
+        cout << "where put?" << endl;
+        if (cin is within allowed range)
+        // take node at index[x] and point to new_node
+        else
+        // prompt for re-input
+    } else {
+        // ask for value to insert (how store value?a variable)
+    }
 }
 
 void remove() {
-
+    // check if 
 }
 
 
 void get() {
 
 }
+
+
+Testing plans:
+----------------------------------
+how make a test function that is easy to interpret/run?
+
+what we want to show:
+---------------------
+that a linked list is created
+user can choose an input and position
+the insert function adds to chosen position
+remove function removes from chosen position
+
+
+
+
+
+
+
+EDIT THIS BEFORE TURNING IN!!!! This is for reference
+template <typename t>
+class Node {
+    public:
+        int id;
+        t value;
+        Node *next;
+
+        Node() {
+            this->id = 0;
+            // this->value;
+            this->next = nullptr;
+        };
+
+        string to_string() {
+            string result = "id: " + std::to_string(this->id) +
+            ", value: " + std::to_string(this->value) +
+            ", next: " + std::to_string((long long)(this->next));
+
+        return result;
+        };
+};
