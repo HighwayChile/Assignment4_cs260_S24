@@ -3,15 +3,25 @@
 My pseudocode is messy and I think I was too focused on making it like real code. 
 I think my time could have been better spent describing the functionality, but 
 on the other hand, it's good to think about the needed structure, even if I am not 
-getting it 100% right.
+getting it 100% right.  
 
 My preamble in the .txt file describes what I want my code to do, and the rest is general 
-plan on how I might start to design the prescribed functionality.
+plan on how I might start to design the prescribed functionality.  
+
+insert() function pseudo on line: 69   
+remove() function pseudo on line: 88  
+get() function pseudo on line: 101  
+
+test module plan/pseudo begins on line: 113  
+
+Big O analysis is on lines : 63, 86, and 99   
 
 
-# NOTES TO SELF
 
-Do not neglect testing!!!
+
+# NOTES TO SELF  
+
+Do not neglect testing!!!  
 
 Watching this week's videos I realized I need to read the instructions more carefully. I will, and must, write tests for this assignment, and I intend to include them in the design phase.  
 

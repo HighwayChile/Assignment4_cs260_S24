@@ -25,12 +25,9 @@ list node, then it will perform several operations and print the
 output to the console under clearly labelled outputs. That is 
 to say that I plan to create a linked list, populate it, print it 
 to the screen, then perform each function at least once on: 
-an empty list, 
-a list of 1, 
-a large list,
-
-I may even try some other tests that involve extreme cases, if 
-time allows.
+an empty list, a list of 1, a large list, try to break the code,
+I may even add in the addresses of my pointers to see what happens with "get" 
+function.
 
 The BigO numbers for this will be either O(1) if our list is empty, or 
 O(n) if the list is populated. So I think the BigO number is O(n).
@@ -40,7 +37,7 @@ Pseudo for functions and vars:
 ------------------------------------------
 
 class Stack {
-    Node *user_choice;
+    Node *current;
     int stack_sizesize;
 
     // the rest of this snippet is copy/pasta 
@@ -59,7 +56,7 @@ class Stack {
 Stack::Stack() {
    stack_size = 0;
    user_num = " "; 
-   user_choice = nullptr; 
+   current = nullptr; 
 }
 
 
@@ -70,7 +67,7 @@ Stack::Stack() {
 // if not empty, show size of list, possibly show values in list 
 // then ask user for position
 void Stack::insert() {
-    if(stack_size >=1 && user_choice != nullptr) {
+    if(stack_size >=1 && current != nullptr) {
         cout << stack_size.value << endl;
         cout << (values of linked list) << endl; // this would need to be in a loop.
         cout << "where put?" << endl;
@@ -90,7 +87,7 @@ void Stack::insert() {
 
 void remove() {
     // check if list is empty 
-    if(stack_size >=1 && user_choice != nullptr) {
+    if(stack_size >=1 && current != nullptr) {
         // ask for position
         // take pointer before that index and make it point to the one after the index
     } else {
@@ -103,7 +100,7 @@ void remove() {
 
 void get() {
     // Check for empty list
-    if(stack_size >=1 && user_choice != nullptr) {
+    if(stack_size >=1 && current != nullptr) {
         // ask for position
         cout << stack_size[user_num] << endl;
     } else {
@@ -119,10 +116,10 @@ how make a test function that is easy to interpret/run?
 
 what we want to show:
 ---------------------
-that a linked list is created
-user can choose an input and position
-the insert function adds to chosen position
-remove function removes from chosen position
+that a linked list is created - use bool
+user can choose an input and position - use magic inputs
+the insert function adds to chosen position - display (and bool?)
+remove function removes from chosen position -  display (and bool?)
 
 
 
@@ -130,24 +127,29 @@ remove function removes from chosen position
 Perhaps I will write a separate program that that uses the functions separately and
 prints out a list to the console.
 
+I would populate this list with either strings or ints or both
+then I would use each function to carry out the operations
+described above. This entails calling the functions from the main 
+module and assigning inputs and then interpreting outputs.
+
+
 Test Pseudocode
 ----------------------
 
-# include other modules and libraries
+# include modules and libraries
 
 # using namespace
 
 First create a linked list
 
 class Stack {
-    Node *user_choice;
+    Node *current;
     int stack_sizesize;
 
     // the rest of this snippet is copy/pasta 
     public:
         Stack();
         // ~Stack(); // this is the signature of a destructor
-        // intend to change these functions to match below
         void insert(int new_node);
         void remove();
         void get();
@@ -157,14 +159,15 @@ class Stack {
 // instantiate a linked list node
 Stack::Stack() {
    stack_size = 0; //list size begins at zero
-   user_num = " "; 
-   user_choice = nullptr; 
+   current = nullptr; 
 }
 
-// I would populate this list with either strings or ints or both
-// then I would use each function to carry out the operations
-// described above. This entails assigning variables at the 
-// beginning of the test module, then using them as magic numbers.
-// could even use true magic numbers. It's only a test module, 
-// after all! Magic!
+// create bool function is_list_extant()
+// this function could be called after each interaction just to stay current.
+
+bool is_list_extant() {
+    // yes or no?
+}
+
+
 
