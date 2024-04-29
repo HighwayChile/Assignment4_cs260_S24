@@ -8,7 +8,6 @@ for empty, then if the list is >=1,
 the user may remove an item. Removing is done by taking the 
 pointer of the former node and pointing it to the latter node.
 
-
 the user may insert an item at any time, but if the  
 stack_size is >=1, the user needs to choose a value 
 as well as a position. This function is kind of the 
