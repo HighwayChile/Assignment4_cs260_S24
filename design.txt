@@ -168,5 +168,16 @@ bool is_list_extant() {
     // yes or no?
 }
 
+// remaining plans:
+
+// run each function on non-list
+// create list
+// call each function on list size one
+// add node, call each function on list
+// add 5-10 nodes and run functions again.
+
+// call functions with multiple values
+
+
 
 
