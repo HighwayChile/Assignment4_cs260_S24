@@ -24,7 +24,7 @@ Note: This assignment is to get you to think about the trade-offs that we may ha
 
 DO NOT NEGLECT TESTING!!!
 
-Okay, watching this week's videos I realized I need to read the instructions more carefully. I will, and must, write tests for this assignment, and I intend to include them in the design phase.  
+Watching this week's videos I realized I need to read the instructions more carefully. I will, and must, write tests for this assignment, and I intend to include them in the design phase.  
 
 Remember to do line-by-line analysis for this assignment! (bigO).  
 

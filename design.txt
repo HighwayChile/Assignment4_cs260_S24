@@ -20,6 +20,17 @@ will point to the node that was formerly in the chosen postion.
 Get function should read the value at the address of the node 
 which is x many steps from 0 (indeces)
 
+My testing function will create a separate stack class and linked 
+list node, then it will perform several operations and print the 
+output to the console under clearly labelled outputs. That is 
+to say that I plan to create a linked list, populate it, print it 
+to the screen, then perform each function at least once on: 
+an empty list, 
+a list of 1, 
+a large list,
+
+I may even try some other tests that involve extreme cases, if 
+time allows.
 
 
 
@@ -36,42 +47,60 @@ class Stack {
         Stack();
         // ~Stack(); // this is the signature of a destructor
         // intend to change these functions to match below
-        void push(int new_node);
-        int pop();
-        int get_size();
+        void insert(int new_node);
+        void remove();
+        void get();
     // end copy/pasta
 };
 
-// instantiate a pointer
-Stack::Stack() {
-   stack_size = 0; //list size begins at zero
+// instantiate a linked list node pointing at nothing, stack_size begins at zero
 
+Stack::Stack() {
+   stack_size = 0;
+   user_num = " "; 
    user_choice = nullptr; 
 }
 
+// insert node into linked list
+// This code needs to check if the list is empty, then
+// if not empty, show size of list, possibly show values in list 
+// then ask user for position
 void Stack::insert() {
-    // This code needs to check if the list is empty, then
-    // if not empty, ask user for position
     if(stack_size >=1 && user_choice != nullptr) {
-        // show size of list, possibly show values in list
-        cout << user_choice.value << endl;
-        // ask for position
+        cout << stack_size.value << endl;
+        cout << (values of linked list) << endl; // this would need to be in a loop.
         cout << "where put?" << endl;
-        if (cin is within allowed range)
-        // take node at index[x] and point to new_node
+        if (cin is within allowed range, dictated by stack_size)
+            // take node at index[x] and point to new_node using temporary pointer
+            // ask for value to insert
+            stack_size++;
         else
-        // prompt for re-input
+            // prompt for re-input 
     } else {
         // ask for value to insert (how store value?a variable)
+        stack_size++;
     }
 }
 
 void remove() {
-    // check if 
+    // check if list is empty 
+    if(stack_size >=1 && user_choice != nullptr) {
+        // ask for position
+        // take pointer before that index and make it point to the one after the index
+    } else {
+    cout << "you can't remove, list is empty" << endl;
+    }
 }
 
 
 void get() {
+    // Check for empty list
+    if(stack_size >=1 && user_choice != nullptr) {
+        // ask for position
+        cout << stack_size[user_num] << endl;
+    } else {
+    cout << "you can't get, list is empty" << endl;
+    }
 
 }
 
@@ -90,28 +119,44 @@ remove function removes from chosen position
 
 
 
+Perhaps I will write a separate program that that uses the functions separately and
+prints out a list to the console.
 
+Test Pseudocode
+----------------------
 
+# include other modules and libraries
 
-EDIT THIS BEFORE TURNING IN!!!! This is for reference
-template <typename t>
-class Node {
+# using namespace
+
+First create a linked list
+
+class Stack {
+    Node *user_choice;
+    int stack_sizesize;
+
+    // the rest of this snippet is copy/pasta 
     public:
-        int id;
-        t value;
-        Node *next;
-
-        Node() {
-            this->id = 0;
-            // this->value;
-            this->next = nullptr;
-        };
-
-        string to_string() {
-            string result = "id: " + std::to_string(this->id) +
-            ", value: " + std::to_string(this->value) +
-            ", next: " + std::to_string((long long)(this->next));
-
-        return result;
-        };
+        Stack();
+        // ~Stack(); // this is the signature of a destructor
+        // intend to change these functions to match below
+        void insert(int new_node);
+        void remove();
+        void get();
+    // end copy/pasta
 };
+
+// instantiate a linked list node
+Stack::Stack() {
+   stack_size = 0; //list size begins at zero
+   user_num = " "; 
+   user_choice = nullptr; 
+}
+
+// I would populate this list with either strings or ints or both
+// then I would use each function to carry out the operations
+// described above. This entails assigning variables at the 
+// beginning of the test module, then using them as magic numbers.
+// could even use true magic numbers. It's only a test module, 
+// after all! Magic!
+
