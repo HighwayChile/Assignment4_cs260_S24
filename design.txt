@@ -141,14 +141,14 @@ Test Pseudocode
 
 First create a linked list
 
-class Stack {
+class Teststack {
     Node *current;
     int stack_sizesize;
 
     // the rest of this snippet is copy/pasta 
     public:
-        Stack();
-        // ~Stack(); // this is the signature of a destructor
+        Teststack();
+        // ~Testtack(); // this is the signature of a destructor
         void insert(int new_node);
         void remove();
         void get();
@@ -156,7 +156,7 @@ class Stack {
 };
 
 // instantiate a linked list node
-Stack::Stack() {
+Teststack::Stack() {
    stack_size = 0; //list size begins at zero
    current = nullptr; 
 }
