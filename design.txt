@@ -101,7 +101,7 @@ void get() {
     // Check for empty list
     if(stack_size >=1 && current != nullptr) {
         // ask for position
-        cout << stack_size[user_num] << endl;
+        //search for position
     } else {
     cout << "you can't get, list is empty" << endl;
     }
