@@ -32,7 +32,8 @@ a large list,
 I may even try some other tests that involve extreme cases, if 
 time allows.
 
-
+The BigO numbers for this will be either O(1) if our list is empty, or 
+O(n) if the list is populated. So I think the BigO number is O(n).
 
 
 Pseudo for functions and vars:
@@ -61,6 +62,9 @@ Stack::Stack() {
    user_choice = nullptr; 
 }
 
+
+// BIG O for insert: this will take O(1) if the list is empty, and O(n) if the list is populated.
+
 // insert node into linked list
 // This code needs to check if the list is empty, then
 // if not empty, show size of list, possibly show values in list 
@@ -82,6 +86,8 @@ void Stack::insert() {
     }
 }
 
+// BIG O for remove: O(1) for empty list O(n) for populated
+
 void remove() {
     // check if list is empty 
     if(stack_size >=1 && user_choice != nullptr) {
@@ -92,6 +98,8 @@ void remove() {
     }
 }
 
+
+// BIG O for get: O(1) for empty list O(n) for populated
 
 void get() {
     // Check for empty list

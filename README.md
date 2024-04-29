@@ -1,4 +1,37 @@
-# Assignment4_cs260_S24  
+# Reflection  
+
+My pseudocode is messy and I think I was too focused on making it like real code. 
+I think my time could have been better spent describing the functionality, but 
+on the other hand, it's good to think about the needed structure, even if I am not 
+getting it 100% right.
+
+My preamble in the .txt file describes what I want my code to do, and the rest is general 
+plan on how I might start to design the prescribed functionality.
+
+
+# NOTES TO SELF
+
+Do not neglect testing!!!
+
+Watching this week's videos I realized I need to read the instructions more carefully. I will, and must, write tests for this assignment, and I intend to include them in the design phase.  
+
+Remember to do line-by-line analysis for this assignment! (bigO).  
+
+Use ".hpp" for header file, not ".h"  
+
+remember "#pragma once"  
+
+Use References (and reference them):  
+  - https://www.bigocheatsheet.com/  
+  - https://en.wikipedia.org/wiki/Computational_complexity  
+  - https://visualgo.net/en/sorting?slide=1  
+
+
+Consider binary search for search function!  
+
+
+
+# Instructions  
     Create a linked-list that allows:  
 
         an add function that takes a value and inserts it into a given position into the list  
@@ -18,24 +51,3 @@
     Attempt to analyze the complexity of your implementation with line-by-line analysis,  
 
 Note: This assignment is to get you to think about the trade-offs that we may have to weigh before using one structure over another  
-
-
-# NOTE TO SELF
-
-DO NOT NEGLECT TESTING!!!
-
-Watching this week's videos I realized I need to read the instructions more carefully. I will, and must, write tests for this assignment, and I intend to include them in the design phase.  
-
-Remember to do line-by-line analysis for this assignment! (bigO).  
-
-Use ".hpp" for header file, not ".h"  
-
-remember "#pragma once"  
-
-Use References (and reference them):  
-  - https://www.bigocheatsheet.com/  
-  - https://en.wikipedia.org/wiki/Computational_complexity  
-  - https://visualgo.net/en/sorting?slide=1  
-
-
-CONSIDER BINARY SEARCH FOR SEARCH FUNCTION!  
