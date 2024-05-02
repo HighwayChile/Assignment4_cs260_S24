@@ -37,7 +37,7 @@ Pseudo for functions and vars:
 
 class Stack {
     Node *current;
-    int stack_sizesize;
+    int stack_size;
 
     // the rest of this snippet is copy/pasta 
     public:
@@ -143,7 +143,7 @@ First create a linked list
 
 class Teststack {
     Node *current;
-    int stack_sizesize;
+    int stack_size;
 
     // the rest of this snippet is copy/pasta 
     public:
